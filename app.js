@@ -17,6 +17,7 @@ Ext.application({
     // modern toolkit, the main view will be added to the Viewport.
     //
    // mainView: 'FB.view.main.Main'
+   
 
     //-------------------------------------------------------------------------
     // Most customizations should be made to FB.Application. If you need to

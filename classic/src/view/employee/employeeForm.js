@@ -40,16 +40,16 @@ Ext.define('FB.view.employee.employee',{
 		style:'background-color:white;',
 		buttons:[{
 			xtype:'button',
-			text:'Cancel',
+			text:'Cancel'
+		},{
+			xtype:'button',
+			text:'Submit',
 			style:'marginLeft:auto;marginRight:auto;',
 			formBind: true,
 			disabled: false,
            	listeners: {
                 click: 'onSubmitClick'
             	}
-		},{
-			xtype:'button',
-			text:'Submit'
 		}]
 	}]
 

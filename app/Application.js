@@ -22,7 +22,7 @@ Ext.define('FB.Application', {
     launch: function () {
         var login=false;
         Ext.create({
-            xtype:login?'app-main':'employee'
+            xtype:login?'app-main':'employeeList'
         });
 
         // TODO - Launch the application

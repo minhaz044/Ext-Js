@@ -84,19 +84,25 @@ Ext.define('FB.view.main.Main', {
             xtype: 'mainlist'
         }]
     },{
-        title: 'Student',
+        title: 'Student(Retrive)',
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!
         items: [{
             xtype: 'studentList'
         }]
     }, {
-        title: 'Employee',
+        title: 'Employee(Create)',
         iconCls: 'fa-user',
          items: [{
             xtype: 'employee'
         }]
-    }, {
+    },/*{
+        title: 'Employee(Update)',
+        iconCls: 'fa-user',
+         items: [{
+            xtype: 'employeeList'
+        }]
+    } ,*/{
         title: 'Groups',
         iconCls: 'fa-users',
         bind: {

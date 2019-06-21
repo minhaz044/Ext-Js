@@ -6,10 +6,8 @@ Ext.define('FB.view.employee.employeeController',{
     ],
 	onSubmitClick:function(){
 		//var form=this.getView().getForm().getValues();
-		 var form=this.getView().getForm().getValues();
-		 var formData={
-		 	
-		 }
+		 var form=this.getView().getForm();
+		 var formData=form.getValues();
 		Ext.Ajax.request({
 		    url: '/api/login',
 		    method: 'POST',          
@@ -19,9 +17,8 @@ Ext.define('FB.view.employee.employeeController',{
 		    success:function(response){
 		    	var obj = Ext.decode(response.responseText);
 		    	if(obj){
-		    		alert("This is Our Response"+obj['phone']);
-		    		Ext.create({xtype:'app-main'});
-		    		loginFormView.close();
+		    		alert("Data Added" );
+		    		form.reset();
 		    	}else{
 					Ext.MessageBox.alert('Login Failed', 'Please4 Bla bla bla', function(){
           			return true;
