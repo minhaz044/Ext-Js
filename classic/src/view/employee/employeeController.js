@@ -29,6 +29,19 @@ Ext.define('FB.view.employee.employeeController',{
 		    	console.log('failure');
 			}
 		});
+	},
+	onDoubleClick:function(dataview, record, item, index, e) {
+		//alert(Object.keys(record.data) +"Data:"+record.data['id'] );
+		Ext.create('FB.view.employee.employee');
+		Ext.create('Ext.window.Window', {
+    	title: 'Hello',
+    	height: 400,
+    	width: 700,
+    	layout: 'fit',
+    	items: {  
+        	xtype: 'employee',               
+    		}
+		}).show();
 	}
 
 

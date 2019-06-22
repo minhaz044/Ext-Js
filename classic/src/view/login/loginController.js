@@ -23,7 +23,7 @@ Ext.define('FB.view.login.loginController',{
 		    success:function(response){
 		    	var obj = Ext.decode(response.responseText);
 		    	if(obj){
-		    		alert("This is Our Response"+obj['phone']);
+		    		//alert("This is Our Response"+obj['phone']);
 		    		Ext.create({xtype:'app-main'});
 		    		loginFormView.close();
 		    	}else{

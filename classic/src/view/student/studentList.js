@@ -27,7 +27,6 @@ Ext.define('FB.view.student.studentList', {
               columns: [{
                 text: "Name",
                 dataIndex: 'name',
-                width: 45
             },
             {
                 text: "Email",

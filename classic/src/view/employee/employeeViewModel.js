@@ -1,7 +1,6 @@
 Ext.define('FB.view.student.employeeViewModel',{
-	extend:'FB.view.student.employeeViewModel',
+	extend:'Ext.app.ViewModel',
     alias: 'viewmodel.employeeViewModel',
-    	xtype:'employeeViewModel',
     stores:{
     	StudentListStore:{
     		model:'FB.model.Employee',

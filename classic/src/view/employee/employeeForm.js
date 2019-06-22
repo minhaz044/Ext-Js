@@ -1,7 +1,6 @@
 Ext.define('FB.view.employee.employee',{
 	extend:'Ext.form.Panel',
 	xtype:'employee',
-	title:'New Employee',
 	controller: 'employeeController',
 	renderTo:Ext.getBody(),
    style: {
@@ -37,14 +36,15 @@ Ext.define('FB.view.employee.employee',{
 		}]
 	},{
 		buttonAlign: 'right',
-		style:'background-color:white;',
+		style:'background-color:white;marginLeft:auto;marginRight:auto;',
+		width:250,
 		buttons:[{
 			xtype:'button',
-			text:'Cancel'
+			text:'Reset'
 		},{
 			xtype:'button',
 			text:'Submit',
-			style:'marginLeft:auto;marginRight:auto;',
+			
 			formBind: true,
 			disabled: false,
            	listeners: {

@@ -96,13 +96,13 @@ Ext.define('FB.view.main.Main', {
          items: [{
             xtype: 'employee'
         }]
-    },/*{
+    },{
         title: 'Employee(Update)',
         iconCls: 'fa-user',
          items: [{
             xtype: 'employeeList'
         }]
-    } ,*/{
+    } ,{
         title: 'Groups',
         iconCls: 'fa-users',
         bind: {
