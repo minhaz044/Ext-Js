@@ -10,14 +10,15 @@ Ext.define('FB.view.employee.employeeList',{
 		store:'{StudentListStore}'
 	},
 	columns:[
-			{Text:'Id',name:'id',dataIndex:'id',fles:20/100},
+			{Text:'Id',name:'id',dataIndex:'id'},
 			{Text:'First Name',name:'firstName',dataIndex:'firstName'},
 			{Text:'Last Name',name:'lastName',dataIndex:'lastName'},
 			{Text:'Gender',name:'gender',dataIndex:'gender'},
 			{Text:'E-mail',name:'email',dataIndex:'email'}
 		],
 		listeners:{
-			itemdblclick:'onDoubleClick'
+			itemdblclick:'onDoubleClick',
+			itemClick:'onSingleClick'
 		}
 
 });

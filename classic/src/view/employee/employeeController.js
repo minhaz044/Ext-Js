@@ -32,8 +32,9 @@ Ext.define('FB.view.employee.employeeController',{
 	},
 	onDoubleClick:function(dataview, record, item, index, e) {
 		//alert(Object.keys(record.data) +"Data:"+record.data['id'] );
+		var data=record.data['id'];
 		Ext.create('FB.view.employee.employee');
-		Ext.create('Ext.window.Window', {
+		var form=Ext.create('Ext.window.Window', {
     	title: 'Hello',
     	height: 400,
     	width: 700,
@@ -41,8 +42,21 @@ Ext.define('FB.view.employee.employeeController',{
     	items: {  
         	xtype: 'employee',               
     		}
-		}).show();
+		});
+		//alert(Object.getOwnPropertyNames(form.items.get(0).getForm()) +"\n"+form.items.get(0).getForm());
+		form.items.get(0).getForm().setValues({
+		firstname: 'value1', 
+		lastname: 'value2' 
+		});
+		form.show();
+	},
+	onSingleClick:function(dataview, record, item, index, e) {
+		//alert(Object.keys(record.data) +"Data:"+record.data['id'] );
+		var data=record.data['id'];
+		var store=this.getViewModel().getStore('StudentListStore');
+		//store.load();
+		alert(data +"\n" +store);
+		
 	}
-
 
 });
